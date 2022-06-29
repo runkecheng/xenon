@@ -32,7 +32,7 @@ var (
 
 // xrpc client
 func GetClient(conn string) (*xrpc.Client, func(), error) {
-	client, err := xrpc.NewClient(conn, 1000)
+	client, err := xrpc.NewClient(conn, 2000)
 	if err != nil {
 		return nil, nil, fmt.Errorf("get.client.error[%v]", err)
 	}
